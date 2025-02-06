@@ -1,0 +1,63 @@
+CSS Animation:
+.#neve# {
+paraméterek
+}
+
+@kayframes #neve# {
+0% {
+    background-position: 0% 0%; (pl)
+}
+50% {
+    background-position: 100% 100%; (pl)
+}
+100% {
+    background-position: 0% 0%; (pl)
+}
+}
+
+HTML:
+<img id="myImage" src="kepek/termek_test.png" alt="Termék">
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        var imgElement = document.getElementById("myImage");
+        if (imgElement) {
+          console.log("SRC abszolút:", imgElement.src); // Abszolút út
+          console.log("SRC relatív:", imgElement.getAttribute("src")); // Relatív út
+        } else {
+            console.error("Az img elem nem található!");
+        }
+    });
+    </script>
+                                VAGY
+JS:
+var imgElement = document.getElementById("myImage");
+if (imgElement) {
+    console.log(imgElement.src);
+    console.log("SRC relatív:", imgElement.getAttribute("src"));
+} else {
+    console.error("Az elem nem található!");
+    };
+var imgsrc = imgElement.getAttribute("src");
+
+
+
+function detectDevice() {
+    const userAgent = navigator.userAgent.toLowerCase();
+    
+    if (/mobile/i.test(userAgent)) {
+      return "Mobile Device";
+    } else if (/tablet/i.test(userAgent)) {
+      return "Tablet";
+    } else {
+      return "Desktop";
+    }
+  }
+  
+  console.log(detectDevice());
+
+let width = window.innerWidth;  // Képernyő szélessége (ablak szélessége)
+let height = window.innerHeight; // Képernyő magassága (ablak magassága)
+
+console.log('Szélesség: ' + width);
+console.log('Magasság: ' + height);
+

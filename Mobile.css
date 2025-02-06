@@ -1,0 +1,194 @@
+html{
+    background-image: url('Képek/BgImage.png');
+    background-repeat: repeat;
+    background-size: fill;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-size: 14px;
+    margin-top: 0vh;
+}
+@keyframes bigger {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.02);
+    }
+    100%{
+        transform: scale(1.04);
+    }
+}
+
+.main_page{
+    padding-top: 15vh;
+    padding-left: 3vw;
+}
+
+.float_head{
+    margin-top: -15vh;
+    z-index: 2;
+    background-color: rgb(54, 54, 54);
+    width: 95vw;
+    position: fixed;
+    margin-left: 2vw;
+    text-align: center;
+    align-items: center;
+    height: 10vh;
+    border-radius: 10px;
+    margin-top: 1vh;
+    display: flex;                          /*__/ KELL \__*/
+    justify-content: center;
+}
+
+.float_head_item{
+    background-color: rgb(54, 54, 54);
+    color: white;
+    font-weight: bolder;
+    font-size: 3.5vw;
+    text-decoration: none;
+    box-shadow: none;
+    border: none;
+    width: 11vw;
+    border-radius: 10px;
+    height: 10vh; 
+    padding: 1%;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    transition: 0.3s ease;
+}
+.float_head_item:hover{
+    background-color: rgb(43, 43, 43);
+    transform: scale(1.06);
+}
+
+
+
+.main_content_box{
+    background-color: rgb(50, 50, 50);
+    width: 40%;
+    height: 20%;
+    border-radius: 4%;
+    padding: 0 0px 0 0;
+    float: left;
+    margin-right: 5%;
+    margin-top: 5vh;
+    transition: ease 0.3s;
+    margin-left: 3.6vw;
+}
+
+.main_content_box:hover{
+    transform: scale(1.06);
+}
+
+.main_content_box_image{
+    background-color: rgba(165, 42, 42, 0);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 0 0 0 0;
+    height: 37%;
+    margin-bottom: 0;
+    color: red;
+}
+.main_content_box_text{
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    justify-items: center;
+    margin-top: 30%;
+    border-radius: 6%;
+    border-top: 2px gray;
+    border-bottom: rgba(128, 128, 128, 0);
+    border-right: rgba(128, 128, 128, 0);
+    border-left: rgba(128, 128, 128, 0);
+    border-style: solid;
+    height: 29%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 4vw;
+}
+
+._image{
+    height: 22vw;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 150vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: ease 0.3s;
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0);
+    margin: 15% auto;
+    margin-left: -10%;
+    padding: 0px;
+    border: 1px solid rgba(136, 136, 136, 0);
+    width: 150%;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    transition: ease 0.3s;
+    text-align: center;
+    align-content: center;
+    height: 70vh;
+}
+
+.main_content_box_modal{
+    background-color: rgb(50, 50, 50);
+    width: 40%;
+    height: 40%;
+    border-radius: 4%;
+    padding: 0 0px 0 0;
+    margin-top: 0vh;
+    transition: ease 0.3s;
+    margin-left: 30vw;
+}
+
+.modal-button {
+    padding: 3.5% 18%;
+    background-color: #4d4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1cm;
+    border-radius: 10px;
+    transition: ease 0.2s;    
+}
+
+.modal-button:hover {
+    background-color: #424242;
+}
+
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: ease 0.3s;
+}
+
+.modal-button2 {
+    padding: 4% 10%;
+    background-color: #4d4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: ease 0.2s;
+    font-size: 0.5cm;
+}
+
+.modal-button2:hover {
+    background-color: #424242;
+}

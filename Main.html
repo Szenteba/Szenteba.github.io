@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <script src="Script.js" defer></script>
+    <link rel="stylesheet" href="Style.css" id="mobileCSS">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-Bit</title>
+    <link rel="icon" href="Képek/Web_Logo.png" type="Web_Logo">
+</head>
+<body>
+    <div id="myModal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="closeModal()">
+            <div class="main_content_box_modal">
+                <dir class="main_content_box_image"><img src="Képek/Termék_test.png" alt="Termék" class="_image" id="myImage"></dir>
+                <dir class="main_content_box_text">Negev The ultimate weapon</dir>
+                <button class="modal-button" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+    <div id="myModal2" class="modal2">
+        <div class="modal-content">
+            <div class="main_content_box_modal">
+                <dir class="main_content_box_image"><img src="Képek/Termék_test.png" alt="Termék" class="_image" id="myImage"></dir>
+                <dir class="main_content_box_text">
+                    Are you sure?
+                    <br><br>
+                    <button class="modal-button2" onclick="closeModal()">Mégse</button>
+                    <button class="modal-button2" onclick="closeModal2()">Igen</button>
+                </dir>
+            </div>
+        </div>
+    </div>
+    <div class="float_head">
+        <button class="float_head_item" id="eltun" onclick="Close_all()"><img src="Képek/qbit_white.png" alt="Qbit logo" class="float_head_logo"></button>
+        <button class="float_head_item" onclick="Display_Main()">Kezdőlap</button>
+        <button class="float_head_item" onclick="Aukció()">Auction</button>
+        <button class="float_head_item" onclick="Limited_edition()">!Limited Edition!</button>
+        <button class="float_head_item" onclick="showModal2()">NHentai</button>
+        <button class="float_head_item">Igen</button>
+        <button class="float_head_item">Mess with the waifu get the knifu</button>
+    </div>
+    <div class="main_content">
+        <div class="main_page" id="Kezdőlap">
+            <div class="main_content_box" onclick="showModal(); console.log(document.getElementsByClassName('main_content_box'))">
+                <dir class="main_content_box_image"><img src="Képek/Termék_test.png" alt="Termék" class="_image"></dir>
+                <dir class="main_content_box_text">Negev The ultimate weapon</dir>
+            </div>
+            <div class="main_content_box" onclick="showModal()">
+                <dir class="main_content_box_image"><img src="Képek/Termék_test2.png" alt="Termék" class="_image"></dir>
+                <dir class="main_content_box_text">Negev The ultimate weapon</dir>
+            </div>
+            <div class="main_content_box" onclick="showModal()">
+                <dir class="main_content_box_image"><img src="Képek/Termék_test3.png" alt="Termék" class="_image"></dir>
+                <dir class="main_content_box_text">Negev The ultimate weapon</dir>
+            </div>
+            <div class="main_content_box" onclick="showModal()">
+                <dir class="main_content_box_image"><img src="Képek/Termék_test.png" alt="Termék" class="_image"></dir>
+                <dir class="main_content_box_text">Negev The ultimate weapon</dir>
+            </div>
+            <div class="main_content_box" onclick="showModal()">
+                <dir class="main_content_box_image"><img src="Képek/Termék_test.png" alt="Termék" class="_image"></dir>
+                <dir class="main_content_box_text">Negev The ultimate weapon</dir>
+            </div>
+            <div class="main_content_box" onclick="showModal()">
+                <dir class="main_content_box_image"><img src="Képek/Termék_test2.png" alt="Termék" class="_image"></dir>
+                <dir class="main_content_box_text">Negev The ultimate weapon</dir>
+            </div>
+            <div class="main_content_box" onclick="showModal()">
+                <dir class="main_content_box_image"><img src="Képek/Termék_test3.png" alt="Termék" class="_image"></dir>
+                <dir class="main_content_box_text">Negev The ultimate weapon</dir>
+            </div>
+            <div class="main_content_box" onclick="showModal()">
+                <dir class="main_content_box_image"><img src="Képek/Termék_test.png" alt="Termék" class="_image"></dir>
+                <dir class="main_content_box_text">Negev The ultimate weapon</dir>
+            </div>
+            <div class="main_content_box" onclick="showModal()">
+                <dir class="main_content_box_image"><img src="Képek/Termék_test.png" alt="Termék" class="_image"></dir>
+                <dir class="main_content_box_text">Negev The ultimate weapon</dir>
+            </div>
+            <div class="main_content_box" onclick="showModal()">
+                <dir class="main_content_box_image"><img src="Képek/Termék_test2.png" alt="Termék" class="_image"></dir>
+                <dir class="main_content_box_text">Negev The ultimate weapon</dir>
+            </div>
+            <div class="main_content_box" onclick="showModal()">
+                <dir class="main_content_box_image"><img src="Képek/Termék_test3.png" alt="Termék" class="_image"></dir>
+                <dir class="main_content_box_text">Negev The ultimate weapon</dir>
+            </div>
+            <div class="main_content_box" onclick="showModal()">
+                <dir class="main_content_box_image"><img src="Képek/Termék_test.png" alt="Termék" class="_image"></dir>
+                <dir class="main_content_box_text">Negev The ultimate weapon</dir>
+            </div>
+        </div>
+        <div class="main_page" id="Aukció" style="display: none;">
+            <div class="main_content_box" onclick="showModal()">
+                <dir class="main_content_box_image"><img src="Képek/Termék_test.png" alt="Termék" class="_image"></dir>
+                <dir class="main_content_box_text">Negev The ultimate weapon <br> -50%</dir>
+            </div>
+            <div class="main_content_box" onclick="showModal()">
+                <dir class="main_content_box_image"><img src="Képek/Termék_test2.png" alt="Termék" class="_image"></dir>
+                <dir class="main_content_box_text">Negev The ultimate weapon  <br> -40%</dir>
+            </div>
+            <div class="main_content_box" onclick="showModal()">
+                <dir class="main_content_box_image"><img src="Képek/Termék_test3.png" alt="Termék" class="_image"></dir>
+                <dir class="main_content_box_text">Negev The ultimate weapon  <br> -70%</dir>
+            </div>
+        </div>
+        <div class="main_page" id="Limited_edition" style="display: none;">
+            <div class="main_content_box" onclick="showModal()">
+                <dir class="main_content_box_image"><img src="Képek/Termék_test.png" alt="Termék" class="_image"></dir>
+                <dir class="main_content_box_text">Negev The ultimate weapon</dir>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
